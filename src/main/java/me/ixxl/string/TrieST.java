@@ -142,4 +142,24 @@ public class TrieST<Value> {
     public void delete(String key) {
         root = delete(root, key, 0);
     }
+
+    public static void main(String[] args) {
+        TrieST<Integer> st = new TrieST<>();
+        st.put("she", 1);
+        st.put("sells", 2);
+        st.put("sea", 3);
+        st.put("shells", 4);
+        st.put("by", 5);
+        st.put("the", 6);
+        st.put("shore", 7);
+
+        for (String key : st.keys()) {
+            System.out.println(key);
+        }
+
+        System.out.println("prefix: she");
+        for (String key : st.keysWithPrefix("she")) {
+            System.out.println(key);
+        }
+    }
 }
