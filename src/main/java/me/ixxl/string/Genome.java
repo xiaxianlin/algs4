@@ -1,9 +1,7 @@
 package me.ixxl.string;
 
-import me.ixxl.util.BinaryDump;
 import me.ixxl.util.BinaryIn;
 import me.ixxl.util.BinaryOut;
-import me.ixxl.util.BinaryStdIn;
 import me.ixxl.util.HexDump;
 
 public class Genome {
